@@ -1,0 +1,130 @@
+.android-loading {
+    position: relative;
+}
+
+.android-loading > * {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 10px;
+    height: 10px;
+    transform-origin: 300% 300%;
+}
+
+.android-loading > * > * {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    animation: scaling-animation 1s linear infinite;
+    transform: scale(0);
+}
+
+.android-loading *:nth-child(2) {
+    transform: rotate(30deg);
+}
+
+.android-loading *:nth-child(3) {
+    transform: rotate(60deg);
+}
+
+.android-loading *:nth-child(4) {
+    transform: rotate(90deg);
+}
+
+.android-loading *:nth-child(5) {
+    transform: rotate(120deg);
+}
+
+.android-loading *:nth-child(6) {
+    transform: rotate(150deg);
+}
+
+.android-loading *:nth-child(7) {
+    transform: rotate(180deg);
+}
+
+.android-loading *:nth-child(8) {
+    transform: rotate(210deg);
+}
+
+.android-loading *:nth-child(9) {
+    transform: rotate(240deg);
+}
+
+.android-loading *:nth-child(10) {
+    transform: rotate(270deg);
+}
+
+.android-loading *:nth-child(11) {
+    transform: rotate(300deg);
+}
+
+.android-loading *:nth-child(12) {
+    transform: rotate(330deg);
+}
+
+.android-loading *:nth-child(1) > * {
+    animation-delay: 0s;
+}
+
+.android-loading *:nth-child(2) > * {
+    animation-delay: 0s;
+}
+
+.android-loading *:nth-child(3) > * {
+    animation-delay: -.2s;
+}
+
+.android-loading *:nth-child(4) > * {
+    animation-delay: -.4s;
+}
+
+.android-loading *:nth-child(5) > * {
+    animation-delay: -.6s
+}
+
+.android-loading *:nth-child(6) > * {
+    animation-delay: -.8s
+}
+
+.android-loading *:nth-child(7) > * {
+    animation-delay: -1s
+}
+
+.android-loading *:nth-child(8) > * {
+    animation-delay: -1s
+}
+
+.android-loading *:nth-child(9) > * {
+    animation-delay: -.8s
+}
+
+.android-loading *:nth-child(10) > * {
+    animation-delay: -.6s
+}
+
+.android-loading *:nth-child(11) > * {
+    animation-delay: -.4s
+}
+
+.android-loading *:nth-child(12) > * {
+    animation-delay: -.2s
+}
+
+@keyframes scaling-animation {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
