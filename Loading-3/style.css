@@ -7,48 +7,42 @@
     height: 80px;
 }
 
-.loading-3 {
+.loading-3, .loading-3--1, .loading-3--2 {
     position: absolute;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: black;
-    animation: jump 1s backwards infinite;
+    animation: jump 3s backwards infinite;
 }
 
-.loading-3::before {
-    position: absolute;
-    content: '';
+.loading-3--1 {
     left: 25px;
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: black;
-    animation: jump 1s backwards infinite;
+    animation-delay: .5s;
 }
 
-.loading-3::after {
-    position: absolute;
+.loading-3--2 {
     left: 50px;
-    content: '';
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: black;
-    animation: jump 1s backwards infinite;
+    animation-delay: 1s;
 }
 @keyframes jump {
     0% {
+        transform: translateY(0px);
+    }
+
+    10% {
         transform: translateY(60px);
     }
 
     50% {
+        transform: translateY(60px);
+    }
+
+    60% {
         transform: translateY(0px);
     }
 
     100% {
-        transform: translateY(60px);
+        transform: translateY(0px);
     }
 }
