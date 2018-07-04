@@ -9,7 +9,8 @@
     width: 100px;
     height: 100px;
     transform: rotate(45deg);
-    animation: scale-loading 2s infinite both, rotate-loading 8s infinite both;
+    animation: scale-loading 2s infinite both
+    /* , rotate-loading 8s infinite both; */
 }
 
 .loading-6--box {

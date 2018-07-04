@@ -1,110 +1,27 @@
-/* Thanks to Panos Kal on stackforflow for the idea. */
-
 .wrapper {
-  width: 100px;
-  height: 100px;
   position: absolute;
-  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
-  /* background-color: black;
-  z-index: -1; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.circle {
-  width: 80px;
-  height: 80px;
-  border: 10px solid green;
-  border-radius: 50px;
-  position: absolute;
-  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+.test {
+  width: 50px;
+  height: 50px;
+  border: solid 5px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), linear-gradient(to top, rgba(216, 0, 0, 0) 50%,#3020ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: rotate-test 1s linear infinite;
 }
 
-div[data-anim~=base] {
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  animation-timing-function:linear;
-  animation-duration: 2s;
-}
-
-.wrapper[data-anim~=wrapper] {
-  animation: close-wrapper 2s forwards infinite, rotate-wrapper 4s forwards linear infinite;
-}
-
-.circle[data-anim~=left] {
-  animation-name: left-spin;
-}
-
-.circle[data-anim~=right] {
-  animation-name: right-spin;
-}
-
-@keyframes right-spin {
+@keyframes rotate-test {
   0% {
     transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(180deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(360deg);
-  }
+
   100% {
-    transform: rotate(540deg);
-  }
-
-}
-
-@keyframes left-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(360deg);
-  }
-  75% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(540deg);
-  }
-}
-
-@keyframes close-wrapper {
-  0% {
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
-  }
-  25% {
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
-  }
-  25.1% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-  75% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-  75.1% {
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-  }
-  100% {
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-  }
-}
-
-@keyframes rotate-wrapper {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
     transform: rotate(360deg);
   }
 }
-
-/* .test {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
-  background-color: black;
-} */
