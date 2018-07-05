@@ -21,7 +21,7 @@ html {
     width: 60vw;
     margin: 2rem auto;
     height: 1px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .u-padding-top-large {
@@ -36,6 +36,17 @@ html {
     font-weight: 100;
 }
 
-.css-animation {
+.css-animations-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 20%;
+    margin-left: 20%;
+}
 
+.css-animation-box {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    display: inline-block;
 }
