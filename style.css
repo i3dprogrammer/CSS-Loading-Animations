@@ -1,0 +1,41 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.heading-primary {
+    font-size: 5rem;
+}
+
+.u-center-text {
+    text-align: center;
+}
+
+.u-underline::after {
+    content: '';
+    display: block;
+    width: 60vw;
+    margin: 2rem auto;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.u-padding-top-large {
+    padding-top: 3rem;
+}
+
+.u-padding-bottom-large {
+    padding-bottom: 3rem;
+}
+
+.u-thin-text {
+    font-weight: 100;
+}
+
+.css-animation {
+
+}
