@@ -9,15 +9,15 @@
     width: 100px;
     height: 100px;
     transform: rotate(45deg);
-    animation: scale-loading 2s infinite both
-    /* , rotate-loading 8s infinite both; */
+    animation: scale-loading-6 2s infinite both
+    /* , rotate-loading-6 8s infinite both; */
 }
 
 .loading-6--box {
     position: absolute;
     width: 50px;
     height: 50px;
-    animation: rotate-boxes 2s infinite both;
+    animation: rotate-boxes-6 2s infinite both;
 }
 
 .loading-6--box:nth-child(1) {
@@ -42,7 +42,7 @@
     background-color: rgb(251, 255, 0);
 }
 
-@keyframes scale-loading {
+@keyframes scale-loading-6 {
     0% {
         width: 100px;
         height: 100px;
@@ -64,7 +64,7 @@
     }
 }
 
-@keyframes rotate-boxes {
+@keyframes rotate-boxes-6 {
     0% {
         transform: rotate(0deg);
     }
@@ -82,7 +82,7 @@
     }
 }
 
-@keyframes rotate-loading {
+@keyframes rotate-loading-6 {
     0% {
         transform: rotate(45deg);
     }

@@ -11,7 +11,7 @@
     height: 20px;
     border: 1px solid rgba(0, 0, 0, 0.24);
     background-color: rgb(197, 197, 197);
-    animation: scale-down 1s infinite linear;
+    animation: scale-down-9 1s infinite linear;
 }
 
 .loading-9--2 {
@@ -34,7 +34,7 @@
     animation-delay: .75s;
 }
 
-@keyframes scale-down {
+@keyframes scale-down-9 {
     0% {
         transform: scaleY(1);
     }

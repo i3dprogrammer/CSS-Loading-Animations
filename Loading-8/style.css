@@ -12,10 +12,10 @@
     border: 5px solid black;
     border-right-color: transparent;
     border-left-color: transparent;
-    animation: rotate-loading 1s infinite linear;
+    animation: rotate-loading-8 1s infinite linear;
 }
 
-@keyframes rotate-loading {
+@keyframes rotate-loading-8 {
     0% {
         transform: rotate(0deg);
     }

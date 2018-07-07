@@ -23,14 +23,14 @@
     border-radius: 50%;
     border: 3px solid rgba(14, 14, 14, 0.8);
     clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
-    animation: rotate 0.5s backwards linear infinite;
+    animation: rotate-4 0.5s backwards linear infinite;
 }
 
-@keyframes rotate {
+@keyframes rotate-4 {
     0% {
-        transform: rotate(45deg);
+        transform: rotate-4(45deg);
     }
     100% {
-        transform: rotate(405deg);
+        transform: rotate-4(405deg);
     }
 }

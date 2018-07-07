@@ -13,7 +13,7 @@
     height: 20px;
     border-radius: 50%;
     background-color: black;
-    animation: jump 3s backwards infinite;
+    animation: jump-3 3s backwards infinite;
 }
 
 .loading-3--1 {
@@ -25,7 +25,7 @@
     left: 50px;
     animation-delay: 1s;
 }
-@keyframes jump {
+@keyframes jump-3 {
     0% {
         transform: translateY(0px);
     }

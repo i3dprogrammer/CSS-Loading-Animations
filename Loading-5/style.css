@@ -9,14 +9,14 @@
     position: relative;
     width: 50px;
     height: 50px;
-    animation: rotate-loading 2s infinite linear;
+    animation: rotate-loading-5 2s infinite linear;
 }
 
 .loading-5--box-1, .loading-5--box-2 {
     position: absolute;
     width: 10px;
     height: 10px;
-    animation: rotate-boxes 2s infinite linear;
+    animation: rotate-boxes-5 2s infinite linear;
     background-color: rgb(206, 206, 206);
     border: 1px solid rgb(121, 121, 121);
 }
@@ -31,7 +31,7 @@
     right: 0%;
 }
 
-@keyframes rotate-boxes {
+@keyframes rotate-boxes-5 {
     0% {
         transform: rotate(0deg);
     }
@@ -69,7 +69,7 @@
     }
 }
 
-@keyframes rotate-loading {
+@keyframes rotate-loading-5 {
     0% {
         transform: rotate(0deg);
     }

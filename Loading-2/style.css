@@ -23,14 +23,14 @@
     border: 5px solid rgba(88,88,88,.7);
     box-sizing: border-box;
     clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
-    animation: rotate-border 1s backwards linear infinite;
+    animation: rotate-border-2 1s backwards linear infinite;
 }
 
 .loading-2--addon-2 {
     animation-delay: .5s;
 }
 
-@keyframes rotate-border {
+@keyframes rotate-border-2 {
     0% {
         transform: rotate(45deg);
     }
